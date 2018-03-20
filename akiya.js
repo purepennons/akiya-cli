@@ -12,5 +12,5 @@ try {
 
 program
   .version(version, '-v, --version')
-  .command('xls2csv <src> <dist>', 'convert a file from xls to csv')
+  .command('xls2csv <src> <dist>', 'convert files from xls to csv')
   .parse(process.argv)
