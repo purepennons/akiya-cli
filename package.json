@@ -7,5 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Akiya Lin",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "fs-extra": "^5.0.0",
+    "glob": "^7.1.2",
+    "xlsx": "^0.12.6"
+  }
 }
