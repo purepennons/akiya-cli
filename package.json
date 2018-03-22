@@ -17,6 +17,6 @@
   },
   "preferGlobal": true,
   "bin": {
-    "akiya": "./akiya.js"
+    "akiya": "./bin/akiya.js"
   }
 }
