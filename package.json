@@ -1,6 +1,6 @@
 {
   "name": "akiya",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "my toolkits",
   "main": "index.js",
   "scripts": {
