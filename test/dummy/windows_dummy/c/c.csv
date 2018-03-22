@@ -1,0 +1,5 @@
+location,source,target
+.Message Inbox,Message Inbox,訊息盒
+.See all <0>unread messages</0>or <1>mark them</1> as read.,See all <0>unread messages</0>or <1>mark them</1> as read.,查看所有 <0>未讀</0>或 <1>標記他們</1> 為已讀。
+".{messagesCount, plural, one {There's # message in your inbox.} other {There're # messages in your inbox.}}","{messagesCount, plural, one {There's # message in your inbox.} other {There're # messages in your inbox.}}","{messagesCount, plural, one {你還有 # 封未讀訊息} other {你還有 # 封未讀訊息}}"
+".Last login on {lastLogin,date}.","Last login on {lastLogin,date}.","最後登入時間為 {lastLogin,date}."
