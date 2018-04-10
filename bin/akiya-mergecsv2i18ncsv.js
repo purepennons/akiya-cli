@@ -61,33 +61,6 @@ const i18nKeyToCSV = R.cond([
   [R.T, R.identity]
 ]);
 
-const i18nLanguageTransfer = R.cond([
-  [R.equals('ENG'), R.always('en')],
-  [R.equals('CHT'), R.always('zh_TW')],
-  [R.equals('CHS'), R.always('zh_CN')],
-  [R.equals('Czech'), R.always('cs')],
-  [R.equals('Danish'), R.always('da')],
-  [R.equals('Dutch'), R.always('nl')],
-  [R.equals('Finnish'), R.always('fi')],
-  [R.equals('French'), R.always('fr')],
-  [R.equals('German'), R.always('de')],
-  [R.equals('Greek'), R.always('el')],
-  [R.equals('Hungarian'), R.always('hu')],
-  [R.equals('Italian'), R.always('it')],
-  [R.equals('Japanese'), R.always('ja')],
-  [R.equals('Korean'), R.always('ko')],
-  [R.equals('Norwegian'), R.always('no')],
-  [R.equals('Polish'), R.always('pl')],
-  [R.equals('Portuguese (Brazil)'), R.always('pt')],
-  [R.equals('Romanian'), R.always('ro')],
-  [R.equals('Russian'), R.always('ru')],
-  [R.equals('Spanish (Latin)'), R.always('es')],
-  [R.equals('Swedish'), R.always('sv')],
-  [R.equals('Thai'), R.always('th')],
-  [R.equals('Turkish'), R.always('tr')],
-  [R.T, R.identity]
-]);
-
 program.parse(process.argv);
 
 const args = program.args;
@@ -109,6 +82,11 @@ try {
 } catch (err) {
   console.error('source is not exist');
   process.exit(1);
+}
+
+if (srcType === 'file') {
+  console.error('input source must be a locale folder')
+  process.exit(1)
 }
 
 const srcBase = path.resolve(pattern);
