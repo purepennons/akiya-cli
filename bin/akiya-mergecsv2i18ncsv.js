@@ -5,7 +5,6 @@ const program = require('commander');
 const glob = require('glob');
 const csv = require('csvtojson');
 const EventEmitter = require('events');
-const execSync = require('child_process').execSync;
 const Json2csvParser = require('json2csv').Parser;
 
 const localeMapping = {
@@ -114,7 +113,14 @@ const langs = files.map(file => {
       csvs[obj.source]['ID'] = obj.source;
       csvs[obj.source][i18nKeyToCSV(lang)] = obj.target;
     })
-    .on('done', err => emitter.emit('csv'));
+    .on('done', err => {
+      if (err) {
+        console.error('error', err)
+        process.exit(1)
+      } else {
+        emitter.emit('csv')
+      }
+    });
 
   return lang;
 });
@@ -132,7 +138,7 @@ emitter.on('csv', () => {
     const csv = parser.parse(Object.values(csvs));
     fs.writeFileSync(baseDist, csv)
   } catch (err) {
-    console.error(err);
+    console.error('error', err);
     process.exit(1);
   }
 });
