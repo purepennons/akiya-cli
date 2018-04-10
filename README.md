@@ -61,6 +61,9 @@ input-csv-files
 
 ## i18ncsv2csv
 Convert i18n csv to origin csv files.
+```shell
+$ akiya i18ncsv2csv tanslated-i18n.csv ./translated
+```
 
 ### input i18n format
 ```
