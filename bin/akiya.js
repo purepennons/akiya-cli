@@ -14,4 +14,5 @@ program
   .version(version, '-v, --version')
   .command('xls2csv <src> <dist>', 'convert files from xls to csv')
   .command('encode2utf8 <src> <dist>', 'encode files to utf-8 with specific encoding')
+  .command('mergecsv2i18ncsv <src> <dist>', 'merge csv files (convert from po2csv) into a i18n format (writer wanted) csv file')
   .parse(process.argv)

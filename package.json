@@ -10,9 +10,12 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^2.15.1",
+    "csvtojson": "^1.1.9",
     "fs-extra": "^5.0.0",
     "glob": "^7.1.2",
     "iconv-lite": "^0.4.19",
+    "json2csv": "^4.0.2",
+    "ramda": "^0.25.0",
     "xlsx": "^0.12.6"
   },
   "preferGlobal": true,

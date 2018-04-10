@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-31 18:14+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 2.2.5\n"
+
+# (pofilter) untranslated: Checks whether a string has been translated at all.
+# 
+# This check is really only useful if you want to extract untranslated
+# strings so that they can be translated independently of the main work.
+#: .%3C0%3EError+Page%21%3C%2F0%3E
+msgid "<0>Error Page!</0>"
+msgstr ""
+
+# (pofilter) untranslated: Checks whether a string has been translated at all.
+# 
+# This check is really only useful if you want to extract untranslated
+# strings so that they can be translated independently of the main work.
+#: .%3C0%3ESorry%2C+the+page+you+visited+is+not+found.+Click+%3C1%3Ehere%3C%2F1%3E+to+get+some+help.%3C%2F0%3E
+msgid ""
+"<0>Sorry, the page you visited is not found. Click <1>here</1> to get some "
+"help.</0>"
+msgstr ""
